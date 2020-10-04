@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  background-color: #969696;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Input {
+  padding: 20px;
+  border: none;
+}
+.number {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.Reset {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+}
