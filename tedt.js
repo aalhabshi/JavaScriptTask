@@ -1,4 +1,5 @@
 var count = document.getElementById('count');
+
 var input = document.getElementById('input');
 
 input.addEventListener('keyup', function(e){
