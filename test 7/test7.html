@@ -33,21 +33,26 @@
 </head>
 <body>
     <div>
-        <textarea cols="50" rows="10" id="word" ></textarea>>
+        <textarea cols="50" rows="10" id="word" ></textarea>
         <br>
-        <p id="showdata"></p>
+        <p id="showdata">0</p>
         <br>
         <button onclick="countwords()">count</button>
+        <button onclick="resetWords()">reset</button>
     </div>
     
     <script>
         const countwords = () => {
-            let noc = document.getElementById('words').value.length;
-            alert(noc);
-            document,getElementById('showdata').innerHTML = "The total Characters = " + noc;
+            let noc = document.getElementById('word').value.length;
+            document.getElementById('showdata').innerHTML = "The total Characters = " + noc;
            
         }
 
+            const resetWords = () => {
+                document.getElementById('word').value = " ";
+                document.getElementById('showdata').innerHTML = "0";
+
+            }
     
     </script>
 </body>
