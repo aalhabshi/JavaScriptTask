@@ -2,11 +2,7 @@ var count = document.getElementById('count');
 var input = document.getElementById('input');
 
 input.addEventListener('keyup', function(e){
-    ...
-  });
-
-  input.addEventListener('keyup', function(e){
-    wordCounter(e.target.value);
+    
   });
 
   function wordCounter(text) {
@@ -19,3 +15,7 @@ input.addEventListener('keyup', function(e){
     }
     count.innerText = wordCount;
   }
+
+  input.addEventListener('keyup', function(e){
+    wordCounter(e.target.value);
+  });
